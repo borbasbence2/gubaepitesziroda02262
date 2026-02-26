@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guba Építésziroda</title>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="components.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <div class="logo-wrap">
+          <a href="home_v1.2.html"
+            ><img src="logo.svg" alt="" class="logo-box"
+          /></a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="nav-toggle" id="navToggle" aria-label="Menü megnyitása">
+          <span class="nav-toggle-line line-1"></span>
+          <span class="nav-toggle-line line-2"></span>
+          <span class="nav-toggle-line line-3"></span>
+        </div>
+
+        <!-- Linkek -->
+        <nav class="nav-links" id="navLinks">
+          <a href="rolam.html">Rólam</a>
+          <a href="tervezesidij.html">Tervezési díj</a>
+          <a href="tudnivalok.html">Tudnivalók</a>
+          <a href="kapcsolat.html">Kapcsolat</a>
+        </nav>
+      </div>
+    </header>
+
+    <section></section>
+
+    <footer>
+      <div class="container footer-row">
+        <div>© GUBA Építésziroda Kft. – Guba Balázs építész</div>
+        <div class="footer-links">
+          <a href="tudnivalok.html">Tudnivalók</a>
+          <a href="kapcsolat.html">Kapcsolat</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Hamburger logika
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+
+      navToggle.addEventListener("click", () => {
+        navToggle.classList.toggle("active");
+        navLinks.classList.toggle("open");
+      });
+
+      // Ha mobilon linkre kattint, zárjuk be a menüt
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (navLinks.classList.contains("open")) {
+            navLinks.classList.remove("open");
+            navToggle.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

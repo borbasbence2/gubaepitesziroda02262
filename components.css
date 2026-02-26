@@ -635,10 +635,12 @@
   margin-top: 32px;
 }
 
+@media (min-width: 768px) {
 .steps-grid > :nth-child(5) {
   grid-column: 1 / -1;
   justify-self: center;
   width: 50%;
+}
 }
 
 @media (max-width: 640px) {

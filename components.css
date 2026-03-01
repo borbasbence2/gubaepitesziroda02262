@@ -8,22 +8,18 @@
 }
 
 .navbar-inner {
-  padding: 0;
+  padding: 18px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* .logo-text-main {
-  font-size: 1.3rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+  padding-left: 0.3rem;
 }
-
-.logo-text-sub {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-} */
 
 .logo-box {
   width: 40%;
@@ -178,27 +174,26 @@
 @media (max-width: 768px) {
   .homeherobg {
     background-position: 45% 55%;
-    height: 90vh;
+    height: 100vh;
   }
 
-  .two-buttons{
+  .two-buttons {
     flex-direction: column;
     gap: 12px;
     justify-content: center;
-    
   }
 
-  .two-buttons .btn-hero{
-    width:fit-content ;
+  .two-buttons .btn-hero {
+    width: fit-content;
   }
 
-  .two-buttons .btn-herosecondary{
-    width:fit-content;
-} 
+  .two-buttons .btn-herosecondary {
+    width: fit-content;
+  }
 
-.hero-content{
-  max-width:60%; 
-}
+  .hero-content {
+    max-width: 80%;
+  }
 }
 
 .hero {
@@ -320,7 +315,7 @@
 /* -------- Section Styles, Dividers  -------- */
 
 .section-bg-bottom {
-  position:relative;
+  position: relative;
   background: var(--bg-soft);
   border-bottom: 1px solid var(--bg-soft);
   border-bottom-right-radius: 100px;
@@ -590,8 +585,8 @@
   background: var(--service-bg-3);
 }
 
-.services{
-  position:relative;
+.services {
+  position: relative;
 }
 .services-grid {
   display: grid;
@@ -636,11 +631,11 @@
 }
 
 @media (min-width: 768px) {
-.steps-grid > :nth-child(5) {
-  grid-column: 1 / -1;
-  justify-self: center;
-  width: 50%;
-}
+  .steps-grid > :nth-child(5) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+  }
 }
 
 @media (max-width: 640px) {

@@ -15,7 +15,7 @@
 }
 
 .logo {
-  font-size: 200px;
+  font-size: 20px;
   font-weight: bold;
   color: var(--primary);
   padding-left: 0.3rem;
@@ -706,4 +706,5 @@ footer {
   display: flex;
   gap: 18px;
 }
+
 
